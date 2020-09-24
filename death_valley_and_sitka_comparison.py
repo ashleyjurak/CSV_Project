@@ -16,7 +16,18 @@ sw_highs = []
 sw_lows = []
 dv_dates = [] #for x axis
 sw_dates = []
+'''
+dv_header_row = next(csv_dv_file)
 
+for index, column_header in enumerate(dv_header_row):
+    print(index,column_header)
+
+sw_header_row = next(csv_sw_file)
+
+for index, column_header in enumerate(sw_header_row, 5,6):
+    print(index, column_header)
+
+'''
 for row in csv_dv_file:
     try:
         dv_high = int(row[4]) #replace number with enumerate function
