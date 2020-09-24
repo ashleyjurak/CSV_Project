@@ -5,7 +5,7 @@ open_file = open("sitka_weather_07-2018_simple.csv", "r")
 csv_file = csv.reader(open_file, delimiter = ",")
 
 header_row = next(csv_file)
-'''
+
 print(header_row)
 
 #enumerate shows us index and value of each item in list
@@ -32,3 +32,4 @@ plt.ylabel("Temperature (F)", fontsize = 16)
 plt.tick_params(axis = "both", which = 'major', labelsize = 16)
 
 plt.show()
+'''
