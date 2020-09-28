@@ -68,3 +68,5 @@ ax[0].fill_between(sw_dates, sw_highs, sw_lows, facecolor = 'blue', alpha = 0.1)
 ax[1].fill_between(dv_dates, dv_highs, dv_lows, facecolor = 'blue', alpha = 0.1)
 
 plt.show()
+
+print()
