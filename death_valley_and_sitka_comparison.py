@@ -16,18 +16,20 @@ sw_highs = []
 sw_lows = []
 dv_dates = [] #for x axis
 sw_dates = []
-'''
+
 dv_header_row = next(csv_dv_file)
 
 for index, column_header in enumerate(dv_header_row):
-    print(index,column_header)
+    dv_in = index
+    dv_ch = column_header
 
 sw_header_row = next(csv_sw_file)
 
 for index, column_header in enumerate(sw_header_row, 5,6):
-    print(index, column_header)
+    sw_in = index
+    sw_ch = column_header
 
-'''
+
 for row in csv_dv_file:
     try:
         dv_high = int(row[4]) #replace number with enumerate function
@@ -68,6 +70,3 @@ ax[0].fill_between(sw_dates, sw_highs, sw_lows, facecolor = 'blue', alpha = 0.1)
 ax[1].fill_between(dv_dates, dv_highs, dv_lows, facecolor = 'blue', alpha = 0.1)
 
 plt.show()
-
-print()
-print()
