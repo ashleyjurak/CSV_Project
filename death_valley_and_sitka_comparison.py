@@ -70,3 +70,4 @@ ax[1].fill_between(dv_dates, dv_highs, dv_lows, facecolor = 'blue', alpha = 0.1)
 plt.show()
 
 print()
+print()
