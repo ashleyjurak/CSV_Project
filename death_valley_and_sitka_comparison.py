@@ -16,19 +16,24 @@ sw_highs = []
 sw_lows = []
 dv_dates = [] #for x axis
 sw_dates = []
-
+'''
 dv_header_row = next(csv_dv_file)
 
 for index, column_header in enumerate(dv_header_row):
     dv_in = index
     dv_ch = column_header
+    if column_header == "TMAX":
+        dv_index = dv_in
+        break
+
+print(dv_index)
 
 sw_header_row = next(csv_sw_file)
 
-for index, column_header in enumerate(sw_header_row, 5,6):
+for index, column_header in enumerate(sw_header_row):
     sw_in = index
     sw_ch = column_header
-
+'''
 
 for row in csv_dv_file:
     try:
